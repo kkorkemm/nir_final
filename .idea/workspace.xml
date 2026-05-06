@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6f142af-1794-400e-94fe-be42e824ff41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/nir2/Entities/Class.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Entities/Class.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Entities/Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Entities/Model.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Pages/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Pages/MainPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Pages/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Pages/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Parser/LexemeAnalyzer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Parser/LexemeAnalyzer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Parser/OPSGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Parser/OPSGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Visitor/CSharpGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Visitor/CSharpGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Windows/ClassWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Windows/ClassWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Windows/ClassWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Windows/ClassWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Windows/ConnectionWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Windows/ConnectionWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/Windows/ConnectionWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/Windows/ConnectionWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nir2/nir2.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/nir2/nir2.csproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="39cdO1LJNso4pCw6JadEYrPdprF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/VS Projects/nir2&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6f142af-1794-400e-94fe-be42e824ff41" name="Changes" comment="" />
+      <created>1770999257189</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770999257189</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,225 @@
+﻿<Window x:Class="nir2.Windows.ConnectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nir2.Windows"
+        xmlns:l="clr-namespace:nir2.Entities"
+        mc:Ignorable="d"
+        Title="Добавить новую связь" Height="350" Width="600" MinHeight="300" MinWidth="520"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Тип связи:"
+                   FontSize="15"
+                   VerticalAlignment="Center"/>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1">
+            <TextBlock Text="Класс 1:"
+                       FontSize="15"
+                       VerticalAlignment="Center"/>
+            <Button x:Name="BtnInfo1"
+                     Click="BtnInfo1_Click"
+                     Margin="15"
+                     Width="20"
+                     Height="20"
+                     Content="?"
+                     BorderThickness="0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+             Grid.Row="2">
+            <TextBlock Text="Класс 2:"
+                FontSize="15"
+                VerticalAlignment="Center"/>
+            <Button x:Name="BtnInfo2"
+                    Click="BtnInfo2_Click"
+                    Margin="15"
+                    Width="20"
+                    Height="20"
+                    Content="?"
+                    BorderThickness="0">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+        <TextBlock Text="Название связи:"
+                   FontSize="15"
+                   VerticalAlignment="Center"
+                   Grid.Row="3"/>
+
+        <ComboBox x:Name="ComboLinkTypes"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"
+                   DisplayMemberPath="Name"
+                   SelectionChanged="ComboLinkTypes_SelectionChanged"
+                   SelectedItem="{Binding ConnectionType}"/>
+
+        <Grid Grid.Row="1"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            
+            <ComboBox x:Name="ComboClass1"
+                      VerticalAlignment="Center"
+                      DisplayMemberPath="Name"
+                      SelectedItem="{Binding Class1}"
+                      SelectionChanged="ComboLinkTypes_SelectionChanged"/>
+
+            <Grid x:Name="GridRole1"
+                  Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10">
+                    <TextBlock Text="Роль"/>
+                    <TextBox x:Name="TextRoleClass1"
+                             Text="{Binding Role1.Name}"/>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10"
+            Grid.Column="1">
+                    <TextBlock Text="Кратность"/>
+                    <TextBox x:Name="TextMultClass1"
+                              Text="{Binding Role1.Multiplicity}"/>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10"
+            Grid.Column="2">
+                    <TextBlock Text="Мод.доступа"/>
+                    <ComboBox x:Name="ComboAccessClass1" SelectedItem="{Binding Role1.AccessType}">
+                        <ComboBox.ItemsSource>
+                            <x:Array Type="{x:Type l:AccessType}">
+                                <x:Static Member="l:AccessType.Public" />
+                                <x:Static Member="l:AccessType.Protected" />
+                                <x:Static Member="l:AccessType.Private" />
+                            </x:Array>
+                        </ComboBox.ItemsSource>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+        <Grid Grid.Row="2"
+              Grid.Column="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <ComboBox x:Name="ComboClass2"
+                   VerticalAlignment="Center"
+                   DisplayMemberPath="Name"
+                   SelectedItem="{Binding Class2}"
+                   SelectionChanged="ComboLinkTypes_SelectionChanged"/>
+
+            <Grid x:Name="GridRole2"
+                  Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10">
+                    <TextBlock Text="Роль"/>
+                    <TextBox x:Name="TextRoleClass2"
+                             Text="{Binding Role2.Name}"/>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10" Grid.Column="1">
+                    <TextBlock Text="Кратность"/>
+                    <TextBox x:Name="TextMultClass2"
+                             Text="{Binding Role2.Multiplicity}"/>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Center" Margin="10 0 0 10" Grid.Column="2">
+                    <TextBlock Text="Мод.доступа"/>
+                    <ComboBox x:Name="ComboAccessClass2" SelectedItem="{Binding Role2.AccessType}">
+                        <ComboBox.ItemsSource>
+                            <x:Array Type="{x:Type l:AccessType}">
+                                <x:Static Member="l:AccessType.Public" />
+                                <x:Static Member="l:AccessType.Protected" />
+                                <x:Static Member="l:AccessType.Private" />
+                            </x:Array>
+                        </ComboBox.ItemsSource>
+                    </ComboBox>
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+
+        <TextBox x:Name="TextLinkName"
+                  Grid.Column="1"
+                  Grid.Row="3"
+                  Text="{Binding Name}"
+                  VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Row="4"
+                     Grid.ColumnSpan="2"
+                     Orientation="Horizontal"
+                    Margin="0 10">
+
+            <Button x:Name="BtnSave"
+                     Click="BtnSave_Click"
+                     Content="Сохранить связь"
+                     Padding="5"
+                    VerticalAlignment="Center"
+                     Margin="0 0 10 0"
+                     Width="150"/>
+
+
+            <Button x:Name="BtnDelete"
+                    Click="BtnDelete_Click"
+                    Content="Удалить связь"
+                    Width="150"
+                    Margin="0 0 10 0"
+                    VerticalAlignment="Center"
+                    Padding="5"
+                    IsEnabled="False"/>
+
+            <Button x:Name="BtnCancel"
+                     Click="BtnCancel_Click"
+                     Content="Отмена"
+                     VerticalAlignment="Center"
+                     Padding="5"
+                     Width="150"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,143 @@
+﻿<Page x:Class="nir2.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:nir2.Pages"
+      xmlns:l="clr-namespace:nir2.Entities"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage"
+      KeyDown="Page_KeyDown"
+      Focusable="True"
+      FocusVisualStyle="{x:Null}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <MenuItem Header="Файл">
+                <MenuItem Header="Вернуть действие"
+                          x:Name="MenuZ"
+                          Click="MenuZ_Click"
+                          InputGestureText="Ctrl+Z"/>
+                <MenuItem Header="Новая диаграмма"
+                          x:Name="MenuNew"
+                          Click="MenuNew_Click"
+                          InputGestureText="Ctrl+N"/>
+                <MenuItem Header="Открыть диаграмму"
+                          x:Name="MenuOpen"
+                          Click="MenuOpen_Click"
+                          InputGestureText="Ctrl+O"/>
+                <MenuItem Header="Сохранить диаграмму"
+                          x:Name="MenuSave"
+                          Click="MenuSave_Click"
+                          InputGestureText="Ctrl+S"/>
+                <MenuItem Header="Сохранить диаграмму как рисунок"
+                          x:Name="MenuSaveImg"
+                          Click="MenuSaveImg_Click"/>
+                <MenuItem Header="Выйти"
+                          x:Name="MenuExit"
+                          Click="MenuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Генерация">
+                <MenuItem Header="PlantUML"
+                          x:Name="PlantUMLGenerate"
+                          Click="PlantUMLGenerate_Click"/>
+                <MenuItem Header="C#"
+                          x:Name="CSharpGenerate"
+                          Click="CSharpGenerate_Click"/>
+            </MenuItem>
+            <MenuItem Header="Получить диаграмму из кода"
+                      x:Name="GetFromCSharp"
+                      Click="GetFromCSharp_Click"/>
+            <MenuItem Header="Справка">
+                <MenuItem Header="Масштабирование"
+                          x:Name="MenuHelp"
+                          Click="MenuHelp_Click"/>
+            </MenuItem>
+        </Menu>
+        
+        <Grid Grid.Row="1"
+              Margin="0 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="270" MinWidth="150" MaxWidth="600"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <Button x:Name="BtnAddClass"
+                            Content="Добавить класс"
+                            Margin="5"
+                            Padding="5"
+                            Click="BtnAddClass_Click"/>
+                    <Button x:Name="BtnAddConnection"
+                            Content="Добавить связь"
+                            Margin="5"
+                            Padding="5"
+                            Click="BtnAddConnection_Click"/>
+                </StackPanel>
+
+                <ListBox Margin="5"
+                         Grid.Row="1"
+                         x:Name="ListClasses"
+                         DisplayMemberPath="Name"
+                         SelectionChanged="ListClasses_SelectionChanged"/>
+
+                <ListBox Margin="5"
+                         Grid.Row="2"
+                         x:Name="ListConnections"
+                         DisplayMemberPath="Name"
+                         SelectionChanged="ListConnections_SelectionChanged"/>
+
+            </Grid>
+
+
+            <GridSplitter Grid.Column="1"
+                          Width="5" 
+                          VerticalAlignment="Stretch"
+                          HorizontalAlignment="Center" />
+
+            <ScrollViewer Grid.Column="2"
+                          HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto"
+                          x:Name="CanvasScrollViewer"
+                          Background="#eee"
+                          PanningMode="Both"> <!--- для тачпада -->
+                <Canvas MouseWheel="MainCanvas_MouseWheel"
+                        MouseDown="MainCanvas_MouseDown"
+                        MouseMove="MainCanvas_MouseMove"
+                        MouseUp="MainCanvas_MouseUp"
+                        ClipToBounds="False"
+                        Margin="5"
+                        Background="#eee"
+                        x:Name="MainCanvas">
+
+                </Canvas>
+            </ScrollViewer>
+
+            <TextBlock x:Name="ZoomText"
+                       Grid.Column="2"
+                       Text="Масштаб: 100%"
+                       FontSize="10"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Bottom"
+                       Margin="20"
+                       Padding="5"
+                       Background="#eee"/>
+
+        </Grid>
+
+    </Grid>
+</Page>

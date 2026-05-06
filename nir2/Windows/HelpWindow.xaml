@@ -1,0 +1,49 @@
+﻿<Window x:Class="nir2.Windows.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nir2.Windows"
+        mc:Ignorable="d"
+        Title="Справка" Height="250" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Горячие клавиши" 
+                       FontSize="18" 
+                       FontWeight="Bold" 
+                       Margin="0,0,0,20"
+                       HorizontalAlignment="Center"/>
+
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Масштабирование:" FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="1" Text="колесо мыши / Ctrl + / Ctrl -"/>
+            </Grid>
+
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Перемещение по холсту:" FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="1" Text="зажатый Ctrl / зажатое колесо мыши"/>
+            </Grid>
+
+            <Grid Margin="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Сброс масштаба:" FontWeight="SemiBold"/>
+                <TextBlock Grid.Column="1" Text="Ctrl + 0"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2026-05-17T20:12:08.5150402+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>Product</Name>
+      <Constraint>Null</Constraint>
+      <X>953.85714285714278</X>
+      <Y>344</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>number</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>manufacturer</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>price</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>guarantee</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Category</Name>
+      <Constraint>Null</Constraint>
+      <X>928.42857142857167</X>
+      <Y>138.57142857142861</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Catalog</Name>
+      <Constraint>Null</Constraint>
+      <X>564.42857142857156</X>
+      <Y>153.71428571428578</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Client</Name>
+      <Constraint>Null</Constraint>
+      <X>185.8730158730159</X>
+      <Y>325.20634920634922</Y>
+      <Width>250</Width>
+      <Height>82</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Имя</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Фамилия</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Store</Name>
+      <Constraint>Null</Constraint>
+      <X>197.57142857142856</X>
+      <Y>154.857142857143</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Order</Name>
+      <Constraint>Null</Constraint>
+      <X>559.04761904761926</X>
+      <Y>438.39682539682531</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>сумма</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>датавремя</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>статусоплаты</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>доставка</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Review</Name>
+      <Constraint>Null</Constraint>
+      <X>564.42857142857144</X>
+      <Y>288.71428571428578</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+    <Class>
+      <Name>VIPClient</Name>
+      <Constraint>Null</Constraint>
+      <X>191.71428571428555</X>
+      <Y>483</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Имя</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Фамилия</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>скидка</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Private</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>Category - Product: Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Category</Class1Name>
+      <Class2Name>Product</Class2Name>
+      <Role1 />
+      <Role2>products</Role2>
+      <Roles>
+        <Role>
+          <Name>products</Name>
+          <AccessType>Public</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Catalog - Category: Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Catalog</Class1Name>
+      <Class2Name>Category</Class2Name>
+      <Role1 />
+      <Role2>categorys</Role2>
+      <Roles>
+        <Role>
+          <Name>categorys</Name>
+          <AccessType>Public</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Store - Catalog: Композиция</Name>
+      <ConnectionTypeId>5</ConnectionTypeId>
+      <Class1Name>Store</Class1Name>
+      <Class2Name>Catalog</Class2Name>
+      <Role1 />
+      <Role2>catalogs</Role2>
+      <Roles>
+        <Role>
+          <Name>catalogs</Name>
+          <AccessType>Private</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Store - Client: Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Store</Class1Name>
+      <Class2Name>Client</Class2Name>
+      <Role1 />
+      <Role2>clients</Role2>
+      <Roles>
+        <Role>
+          <Name>clients</Name>
+          <AccessType>Public</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Client - Order: Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Client</Class1Name>
+      <Class2Name>Order</Class2Name>
+      <Role1 />
+      <Role2>orders</Role2>
+      <Roles>
+        <Role>
+          <Name>orders</Name>
+          <AccessType>Public</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Review - Client: Ассоциация</Name>
+      <ConnectionTypeId>1</ConnectionTypeId>
+      <Class1Name>Review</Class1Name>
+      <Class2Name>Client</Class2Name>
+      <Role1 />
+      <Role2>client</Role2>
+      <Roles>
+        <Role>
+          <Name>client</Name>
+          <AccessType>Public</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Client - VIPClient: Наследование</Name>
+      <ConnectionTypeId>4</ConnectionTypeId>
+      <Class1Name>Client</Class1Name>
+      <Class2Name>VIPClient</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles />
+    </Connection>
+    <Connection>
+      <Name>Product - Review: Композиция</Name>
+      <ConnectionTypeId>5</ConnectionTypeId>
+      <Class1Name>Product</Class1Name>
+      <Class2Name>Review</Class2Name>
+      <Role1 />
+      <Role2>reviews</Role2>
+      <Roles>
+        <Role>
+          <Name>reviews</Name>
+          <AccessType>Private</AccessType>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>

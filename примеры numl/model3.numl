@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2025-11-30T17:57:42.9535448+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>Room</Name>
+      <Constraint>Null</Constraint>
+      <X>136.80000000000007</X>
+      <Y>433.40000000000003</Y>
+      <Width>250</Width>
+      <Height>82</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Number</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>Type</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Hotel</Name>
+      <Constraint>Null</Constraint>
+      <X>87.200000000000045</X>
+      <Y>300.6</Y>
+      <Width>250</Width>
+      <Height>61</Height>
+      <Attributes>
+        <Attribute>
+          <Name>room</Name>
+          <DataType>Room</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>true</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>IPrint</Name>
+      <Constraint>Interface</Constraint>
+      <X>86.600000000000023</X>
+      <Y>77.399999999999977</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes />
+      <Methods>
+        <Method>
+          <Name>PrintReport</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>message</Name>
+              <DataType>String</DataType>
+              <IsCollection>true</IsCollection>
+            </Argument>
+            <Argument>
+              <Name>hotel</Name>
+              <DataType>Hotel</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+            <Argument>
+              <Name>client</Name>
+              <DataType>Client</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+        <Method>
+          <Name>PrintMessage</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>message2</Name>
+              <DataType>String</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+        <Method>
+          <Name>PrintStats</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Client</Name>
+      <Constraint>Null</Constraint>
+      <X>384.40000000000009</X>
+      <Y>179.79999999999996</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Name</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>Surname</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>Birthday</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>Pay</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>комната</Name>
+              <DataType>Room</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+      </Methods>
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>IPrint - Hotel:  Реализация</Name>
+      <ConnectionTypeId>7</ConnectionTypeId>
+      <Class1Name>IPrint</Class1Name>
+      <Class2Name>Hotel</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Hotel - Room:  Зависимость</Name>
+      <ConnectionTypeId>2</ConnectionTypeId>
+      <Class1Name>Hotel</Class1Name>
+      <Class2Name>Room</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>

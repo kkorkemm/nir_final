@@ -1,0 +1,102 @@
+
+Результаты лексического анализа:
+Позиция 	|Строка 	|Тип лексемы 		|Значение 	|
+1		1		 Public			 ublic
+2		1		 Class			 class
+3		1		 Id			 Point
+4		1		 LeftBrace			 
+5		1		 RightBrace			 
+1		3		 Public			 public
+2		3		 Class			 class
+3		3		 Id			 Circle
+4		3		 LeftBrace			 
+5		4		 Private			 private
+6		4		 Id			 Point
+7		4		 LeftSquareBracket			 
+8		4		 RightSquareBracket			 
+8		4		 Id			 set
+9		4		 Semicolon			 
+5		5		 Public			 public
+6		5		 Id			 Kvadrat
+6		5		 Id			 center
+7		5		 Semicolon			 
+1		6		 RightBrace			 
+1		8		 Public			 public
+2		8		 Class			 class
+2		8		 Id			 Kvadrat
+3		8		 LeftBrace			 
+4		8		 RightBrace			 
+1		10		 Public			 public
+2		10		 Class			 class
+3		10		 Id			 Circle
+4		10		 LeftBrace			 
+5		11		 Public			 public
+6		11		 Void			 void
+6		11		 Id			 addPoint
+7		11		 LeftRoundBracket			 
+8		11		 Id			 Point
+8		11		 Id			 c
+9		11		 RightRoundBracket			 
+11		11		 LeftBrace			 
+12		11		 RightBrace			 
+1		12		 RightBrace			 
+1		14		 Public			 public
+2		14		 Abstract			 abstract
+3		14		 Class			 class
+4		14		 Id			 Student
+1		15		 LeftBrace			 
+5		16		 Public			 public
+6		16		 String			 string
+6		16		 Id			 Name
+7		16		 Semicolon			 
+5		17		 Public			 public
+6		17		 String			 string
+6		17		 Id			 Surname
+7		17		 Semicolon			 
+5		19		 Public			 public
+6		19		 Void			 void
+6		19		 Id			 Sleep
+7		19		 LeftRoundBracket			 
+8		19		 String			 string
+8		19		 Id			 son
+9		19		 RightRoundBracket			 
+11		19		 LeftBrace			 
+12		19		 RightBrace			 
+1		20		 RightBrace			 
+1		22		 Public			 public
+2		22		 Class			 class
+3		22		 Id			 Kvadrat
+4		22		 LeftBrace			 
+5		23		 Public			 public
+6		23		 String			 string
+6		23		 Id			 Name
+7		23		 Semicolon			 
+5		24		 Public			 public
+6		24		 Id			 Student
+7		24		 LeftSquareBracket			 
+8		24		 RightSquareBracket			 
+8		24		 Id			 crew
+9		24		 Semicolon			 
+1		25		 RightBrace			 
+2		25		 Finish			 
+
+
+
+
+Результаты синтаксического анализа:
+Point		0		 0			Public		Null
+Kvadrat		1		 0			Public		Null
+		Name		String		 Public			Null
+Circle		0		 1			Public		Null
+		addPoint		Void		 Public			Null
+Student		2		 1			Public		Abstract
+		Name		String		 Public			Null
+		Surname		String		 Public			Null
+		Sleep		Void		 Public			Null
+		Circle		 Point			Композиция		
+set
+		Circle		 Kvadrat			Ассоциация		
+center
+		Circle		 Point			Зависимость		
+		Kvadrat		 Student			Агрегация		
+crew

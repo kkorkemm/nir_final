@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2026-03-04T16:15:49.8099788+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>Person</Name>
+      <Constraint>Abstract</Constraint>
+      <X>82.400000000000091</X>
+      <Y>69.399999999999892</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Name</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Age</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>1</Multiplicity>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Address</Name>
+          <DataType>String</DataType>
+          <AccessType>Private</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>Sleep</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Student</Name>
+      <Constraint>Null</Constraint>
+      <X>58.999999999999943</X>
+      <Y>406.7999999999999</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Course</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Faculty</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>Study</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Subject</Name>
+      <Constraint>Null</Constraint>
+      <X>418.80000000000018</X>
+      <Y>406.2</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Name</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Hours</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>Session</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>new</Name>
+      <Constraint>Null</Constraint>
+      <X>415</X>
+      <Y>156.19999999999996</Y>
+      <Width>250</Width>
+      <Height>84</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Surname</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>skdnflksdn</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>newCopy</Name>
+      <Constraint>Null</Constraint>
+      <X>239.79999999999996</X>
+      <Y>284.00000000000006</Y>
+      <Width>250</Width>
+      <Height>62</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Name</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>Person - Student:  Наследование</Name>
+      <ConnectionTypeId>4</ConnectionTypeId>
+      <Class1Name>Person</Class1Name>
+      <Class2Name>Student</Class2Name>
+      <Role1>id</Role1>
+      <Role2>student</Role2>
+      <Roles>
+        <Role>
+          <Name>id</Name>
+          <Multiplicity>1</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>student</Name>
+          <Multiplicity>1..*</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Student - Subject:  Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Student</Class1Name>
+      <Class2Name>Subject</Class2Name>
+      <Role1 />
+      <Role2>studies</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>studies</Name>
+          <Multiplicity>*</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>new - Subject:  Зависимость</Name>
+      <ConnectionTypeId>2</ConnectionTypeId>
+      <Class1Name>new</Class1Name>
+      <Class2Name>Subject</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Person - Person:  Ассоциация</Name>
+      <ConnectionTypeId>1</ConnectionTypeId>
+      <Class1Name>Person</Class1Name>
+      <Class2Name>Person</Class2Name>
+      <Role1 />
+      <Role2>persona</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>persona</Name>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>

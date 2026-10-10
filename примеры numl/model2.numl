@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2026-04-30T12:05:35.257867+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>Университет</Name>
+      <Constraint>Null</Constraint>
+      <X>618.99999999999966</X>
+      <Y>544.43999999999994</Y>
+      <Width>250</Width>
+      <Height>61</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Название</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Ректор</Name>
+      <Constraint>Null</Constraint>
+      <X>622.59999999999968</X>
+      <Y>322.458181818182</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Отчество</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Имя</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>ГодРождения</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Private</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Фамилия</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Студент</Name>
+      <Constraint>Null</Constraint>
+      <X>328.49090909090927</X>
+      <Y>72.749090909090853</Y>
+      <Width>250</Width>
+      <Height>208</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Фамилия</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Имя</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>Отчество</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>ГодРождения</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>1</Multiplicity>
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue>2004</DefaultValue>
+        </Attribute>
+        <Attribute>
+          <Name>Предметы</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>5..*</Multiplicity>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>податьЗаявление</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>название</Name>
+              <DataType>String</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+        <Method>
+          <Name>пойтиНаПары</Name>
+          <DataType>Boolean</DataType>
+          <AccessType>Private</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+        <Method>
+          <Name>проснуться</Name>
+          <DataType>Void</DataType>
+          <AccessType>Private</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>время</Name>
+              <DataType>Real</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Кафедра</Name>
+      <Constraint>Static</Constraint>
+      <X>2.9999999999999432</X>
+      <Y>213.99999999999983</Y>
+      <Width>250</Width>
+      <Height>61</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Название</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Экзамен</Name>
+      <Constraint>Null</Constraint>
+      <X>309.79595959595952</X>
+      <Y>426.02626262626262</Y>
+      <Width>250</Width>
+      <Height>61</Height>
+      <Attributes>
+        <Attribute>
+          <Name>Название</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Куратор</Name>
+      <Constraint>Null</Constraint>
+      <X>685.58181818181833</X>
+      <Y>155.98181818181843</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>Университет - Ректор:  Композиция</Name>
+      <ConnectionTypeId>5</ConnectionTypeId>
+      <Class1Name>Университет</Class1Name>
+      <Class2Name>Ректор</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Multiplicity>1</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Связь "Староста"</Name>
+      <ConnectionTypeId>1</ConnectionTypeId>
+      <Class1Name>Студент</Class1Name>
+      <Class2Name>Студент</Class2Name>
+      <Role1 />
+      <Role2>староста</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>староста</Name>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Студент - Экзамен:  Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Студент</Class1Name>
+      <Class2Name>Экзамен</Class2Name>
+      <Role1 />
+      <Role2>сданныеЭкзамены</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>сданныеЭкзамены</Name>
+          <Multiplicity>0..*</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Ректор - Куратор:  Наследование</Name>
+      <ConnectionTypeId>4</ConnectionTypeId>
+      <Class1Name>Ректор</Class1Name>
+      <Class2Name>Куратор</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Кафедра - Экзамен:  Зависимость</Name>
+      <ConnectionTypeId>2</ConnectionTypeId>
+      <Class1Name>Кафедра</Class1Name>
+      <Class2Name>Экзамен</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Студент - Кафедра:  Ассоциация</Name>
+      <ConnectionTypeId>1</ConnectionTypeId>
+      <Class1Name>Студент</Class1Name>
+      <Class2Name>Кафедра</Class2Name>
+      <Role1 />
+      <Role2>НИР</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>НИР</Name>
+          <Multiplicity>1</Multiplicity>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Студент - Куратор:  Двунаправленная ассоциация</Name>
+      <ConnectionTypeId>6</ConnectionTypeId>
+      <Class1Name>Студент</Class1Name>
+      <Class2Name>Куратор</Class2Name>
+      <Role1>ученик</Role1>
+      <Role2>наставник</Role2>
+      <Roles>
+        <Role>
+          <Name>ученик</Name>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>наставник</Name>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>

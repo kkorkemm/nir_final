@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2025-11-30T20:14:48.3223649+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>FeedBack</Name>
+      <Constraint>Null</Constraint>
+      <X>77.799999999999955</X>
+      <Y>99.799999999999926</Y>
+      <Width>250</Width>
+      <Height>40</Height>
+      <Attributes />
+      <Methods />
+    </Class>
+    <Class>
+      <Name>Product</Name>
+      <Constraint>Null</Constraint>
+      <X>457.00000000000023</X>
+      <Y>91.799999999999983</Y>
+      <Width>250</Width>
+      <Height>166</Height>
+      <Attributes>
+        <Attribute>
+          <Name>serialNUm</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>unique</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>producer</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>guarantee</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>price</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>getFeedBack</Name>
+          <DataType>FeedBack</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+        <Method>
+          <Name>display</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Order</Name>
+      <Constraint>Null</Constraint>
+      <X>480.39999999999986</X>
+      <Y>393.39999999999992</Y>
+      <Width>250</Width>
+      <Height>187</Height>
+      <Attributes>
+        <Attribute>
+          <Name>totalSum</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>dateTime</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>paid</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>accureBonuses</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+        <Method>
+          <Name>setDelivery</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+        <Method>
+          <Name>applyPromoCode</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>code</Name>
+              <DataType>String</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+        <Method>
+          <Name>change</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>prod</Name>
+              <DataType>Product</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>Customer</Name>
+      <Constraint>Null</Constraint>
+      <X>79.399999999999864</X>
+      <Y>223.60000000000005</Y>
+      <Width>250</Width>
+      <Height>145</Height>
+      <Attributes>
+        <Attribute>
+          <Name>phoneNumer</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>nickName</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>readOnly</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+        <Attribute>
+          <Name>bonuses</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Protected</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>userPromo</Name>
+          <DataType>Void</DataType>
+          <AccessType>Protected</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+        <Method>
+          <Name>payTheBill</Name>
+          <DataType>UnlimitedNatural</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments>
+            <Argument>
+              <Name>o</Name>
+              <DataType>Order</DataType>
+              <IsCollection>false</IsCollection>
+            </Argument>
+          </Arguments>
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>VIPCustomer</Name>
+      <Constraint>Null</Constraint>
+      <X>84.199999999999932</X>
+      <Y>471.8</Y>
+      <Width>250</Width>
+      <Height>61</Height>
+      <Attributes>
+        <Attribute>
+          <Name>personalDiscount</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Private</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+        </Attribute>
+      </Attributes>
+      <Methods />
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>Customer - VIPCustomer:  Наследование</Name>
+      <ConnectionTypeId>4</ConnectionTypeId>
+      <Class1Name>Customer</Class1Name>
+      <Class2Name>VIPCustomer</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Customer - Order:  Композиция</Name>
+      <ConnectionTypeId>5</ConnectionTypeId>
+      <Class1Name>Customer</Class1Name>
+      <Class2Name>Order</Class2Name>
+      <Role1 />
+      <Role2>orderHistory</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>orderHistory</Name>
+          <AccessType>Private</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>FeedBack - Customer:  Ассоциация</Name>
+      <ConnectionTypeId>1</ConnectionTypeId>
+      <Class1Name>FeedBack</Class1Name>
+      <Class2Name>Customer</Class2Name>
+      <Role1 />
+      <Role2>user</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>user</Name>
+          <AccessType>Private</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Order - Product:  Агрегация</Name>
+      <ConnectionTypeId>3</ConnectionTypeId>
+      <Class1Name>Order</Class1Name>
+      <Class2Name>Product</Class2Name>
+      <Role1 />
+      <Role2>lines</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>lines</Name>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+    <Connection>
+      <Name>Product - FeedBack:  Композиция</Name>
+      <ConnectionTypeId>5</ConnectionTypeId>
+      <Class1Name>Product</Class1Name>
+      <Class2Name>FeedBack</Class2Name>
+      <Role1 />
+      <Role2>reviews</Role2>
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <Name>reviews</Name>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <Created>2026-04-23T11:04:14.0826861+07:00</Created>
+  <Classes>
+    <Class>
+      <Name>Test</Name>
+      <Constraint>Null</Constraint>
+      <X>16.923076923076906</X>
+      <Y>59.692307692307679</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes>
+        <Attribute>
+          <Name>priveet</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>3</Multiplicity>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>poka</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>kakdela</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>TestCopy</Name>
+      <Constraint>Null</Constraint>
+      <X>148.79999999999978</X>
+      <Y>283.59999999999974</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>priveet</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>3</Multiplicity>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>poka</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>hey</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>kakdela</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>TestCopyCopy</Name>
+      <Constraint>Null</Constraint>
+      <X>433.13333333333333</X>
+      <Y>66.866666666666589</Y>
+      <Width>250</Width>
+      <Height>124</Height>
+      <Attributes>
+        <Attribute>
+          <Name>priveet</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>3</Multiplicity>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>poka</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>hey</Name>
+          <DataType>Real</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>kakdela</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+    <Class>
+      <Name>TestCopy3</Name>
+      <Constraint>Null</Constraint>
+      <X>471.66666666666674</X>
+      <Y>356.33333333333326</Y>
+      <Width>250</Width>
+      <Height>103</Height>
+      <Attributes>
+        <Attribute>
+          <Name>priveet</Name>
+          <DataType>Integer</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity>3</Multiplicity>
+          <Constraint>Static</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+        <Attribute>
+          <Name>poka</Name>
+          <DataType>String</DataType>
+          <AccessType>Public</AccessType>
+          <Multiplicity />
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <DefaultValue />
+        </Attribute>
+      </Attributes>
+      <Methods>
+        <Method>
+          <Name>kakdela</Name>
+          <DataType>Void</DataType>
+          <AccessType>Public</AccessType>
+          <Constraint>Null</Constraint>
+          <IsCollection>false</IsCollection>
+          <Arguments />
+        </Method>
+      </Methods>
+    </Class>
+  </Classes>
+  <Connections>
+    <Connection>
+      <Name>Test - TestCopyCopy:  Зависимость</Name>
+      <ConnectionTypeId>2</ConnectionTypeId>
+      <Class1Name>Test</Class1Name>
+      <Class2Name>TestCopyCopy</Class2Name>
+      <Role1 />
+      <Role2 />
+      <Roles>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>1</Direction>
+        </Role>
+        <Role>
+          <AccessType>Public</AccessType>
+          <Direction>2</Direction>
+        </Role>
+      </Roles>
+    </Connection>
+  </Connections>
+</ClassDiagram>
